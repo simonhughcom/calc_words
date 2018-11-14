@@ -9,7 +9,7 @@ def load_words():
 
 words = load_words()
 
-print("Length = {} ", len(words)) #Print number of words
+print("Length = {} ".format(len(words))) #Print number of words
 
 
 # I Assume only upside down numbers can be used i.e. 0123456789 and
