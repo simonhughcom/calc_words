@@ -13,8 +13,8 @@ print("Length = {} ", len(words)) #Print number of words
 
 
 # I Assume only upside down numbers can be used i.e. 0123456789
-# So the only numbers I allow will be OGBSHEIX
-goodLetters = r'^[ogbsheix]+$'
+# So the only numbers I allow will be OGBSHEIXL
+goodLetters = r'^[ogbsheixl]+$'
 longestAcceptableWord = ''
 
 
