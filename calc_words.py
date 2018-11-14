@@ -12,8 +12,9 @@ words = load_words()
 print("Length = {} ", len(words)) #Print number of words
 
 
-# I Assume only upside down numbers can be used i.e. 0123456789
-# So the only numbers I allow will be OGBSHEIXL
+# I Assume only upside down numbers can be used i.e. 0123456789 and
+# muliplication symbol X
+# So the only letters I allow will be OGBSHEIXL
 goodLetters = r'^[ogbsheixl]+$'
 longestAcceptableWord = ''
 
@@ -22,7 +23,7 @@ for word in words:
   if len(word) <= len(longestAcceptableWord):
     continue
 
-  if bool(re.search(goodLetters, word)):
+  if re.search(goodLetters, word):
     longestAcceptableWord = word
 
 
